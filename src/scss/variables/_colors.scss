@@ -1,15 +1,7 @@
-// 
-// Colors
-// 
-
-// Pre-state grayscale colors used in other variables
-
-$gray-800: #343a40;
-
-// Override Bootstrap color system
-
-$orange: #bd5d38;
-
-// Override Bootstrap default state colors
-
-$primary: $orange;
+// Ethereal Minimalist Palette
+$bg-color: #FDFBF7; // Warm Paper / Off-white
+$sidebar-bg: #F5F2EB; // Slightly darker warm gray for sidebar
+$text-color: #2A2A2A; // Soft Black
+$text-muted: #666666;
+$accent-color: #C1A57B; // Muted Gold / Sand
+$border-color: rgba(0, 0, 0, 0.06);

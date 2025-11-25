@@ -2,6 +2,10 @@
 // Sections
 // 
 
+// 
+// Sections
+// 
+
 section.resume-section {
     display: flex;
     align-items: center;
@@ -9,10 +13,51 @@ section.resume-section {
     padding-right: 1rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    max-width: 75rem;
+    max-width: 85rem; // Increased max-width
 
     .resume-section-content {
         width: 100%;
+
+        // Target the flex containers that hold experience/education items
+        >.d-flex {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem !important; // Override mb-5
+            border-radius: 16px;
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.08);
+            }
+
+            .flex-grow-1 {
+                h3 {
+                    font-size: 1.75rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .subheading {
+                    font-size: 1.1rem;
+                    color: lighten($charcoal, 30%);
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .flex-shrink-0 {
+                span.text-primary {
+                    color: $secondary !important; // Mute the date color
+                    font-family: $font-family-base;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    background: $off-white;
+                    padding: 0.5rem 1rem;
+                    border-radius: 50px;
+                }
+            }
+        }
     }
 }
 
@@ -28,5 +73,8 @@ section.resume-section {
         padding-right: 3rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
+
+        // Adjust for floating sidebar
+        margin-left: 280px; // Ensure content doesn't overlap with floating nav
     }
 }

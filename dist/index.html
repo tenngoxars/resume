@@ -10,128 +10,115 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&amp;display=swap" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Lato:wght@300;400;700&amp;family=Noto+Sans+SC:wght@300;400;700&amp;display=swap" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none" data-i18n="about.navName">李泽辰</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="李泽辰个人照片" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about" data-i18n="nav.about">关于我</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education" data-i18n="nav.education">教育背景</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" data-i18n="nav.experience">工作经历</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" data-i18n="nav.skills">技能标签</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects" data-i18n="nav.projects">项目与作品</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#self" data-i18n="nav.self">自我评价</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#honors" data-i18n="nav.honors">荣誉与奖项</a></li>
-                    <li class="nav-item mt-3"><button class="btn btn-outline-light btn-sm w-100" id="languageToggle" type="button" data-i18n="controls.toggle">English</button></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0"><span data-i18n="about.fullName">李泽辰</span></h1>
-                    <div class="subheading mb-3" data-i18n="about.tagline">开发者内容布道 / 技术传播方向｜10 年经验</div>
-                    <p data-i18n="about.contact" data-i18n-type="html">
-                        <strong>坐标：</strong>
-                        深圳 ·
-                        <strong>邮箱：</strong>
-                        <a href="mailto:tenngoxars@hotmail.com">tenngoxars@hotmail.com</a>
-                        ·
-                        <strong>手机/微信：</strong>
-                        180090294792 ·
-                        <strong>年龄：</strong>
-                        32 岁
-                    </p>
-                    <p class="lead" data-i18n="about.focus">职业方向：内容策略 / 开源运营 / 技术传播</p>
+    <body>
+        <main class="layout">
+            <!-- Sidebar (Fixed Left)-->
+            <aside class="sidebar">
+                <div class="profile-container">
+                    <img class="profile-img" src="assets/img/profile.jpg" alt="李泽辰" />
+                    <h1 class="name" data-i18n="about.navName">李泽辰</h1>
+                    <p class="tagline" data-i18n="about.tagline">开发者内容布道 / 技术传播方向</p>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="education.sectionTitle">教育背景</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0" data-i18n="education.university.name">陕西理工大学</h3>
-                            <div class="subheading mb-3" data-i18n="education.university.degree">经济学学士</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="education.university.dates">2011.09 - 2015.07</span></div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#about" data-i18n="nav.about">关于我</a></li>
+                        <li><a href="#experience" data-i18n="nav.experience">工作经历</a></li>
+                        <li><a href="#projects" data-i18n="nav.projects">项目与作品</a></li>
+                        <li><a href="#skills" data-i18n="nav.skills">技能标签</a></li>
+                        <li><a href="#honors" data-i18n="nav.honors">荣誉与奖项</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- Main Content (Scrollable Right)-->
+            <article class="content">
+                <!-- About Section-->
+                <section class="section" id="about">
+                    <h2 class="section-title" data-i18n="nav.about">关于我</h2>
+                    <div class="section-body">
+                        <p class="lead" data-i18n="about.focus">职业方向：内容策略 / 开源运营 / 技术传播</p>
+                        <p class="contact-info" data-i18n="about.contact" data-i18n-type="html">
+                            <strong>坐标：</strong>
+                            深圳 ·
+                            <strong>邮箱：</strong>
+                            <a href="mailto:tenngoxars@hotmail.com">tenngoxars@hotmail.com</a>
+                            ·
+                            <strong>手机/微信：</strong>
+                            180090294792 ·
+                            <strong>年龄：</strong>
+                            32 岁
+                        </p>
+                        <p class="bio" data-i18n="self.description">长期站在开发者与产品之间，擅长用内容的形式讲清楚技术的价值。熟悉开源社区逻辑与开发者心智，具备将产品能力翻译为实际场景的经验。擅长多语言、多媒介传播，习惯以结果导向优化传播路径与社区构建方式。</p>
                     </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="experience.sectionTitle">工作经历</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0" data-i18n="experience.gitee.title">Gitee｜内容负责人</h3>
-                            <div class="subheading mb-3" data-i18n="experience.gitee.summary">围绕开源、DevOps、人工智能产品进行内容传播、开发者生态建设与产品推广工作</div>
-                            <h4 class="mt-4" data-i18n="experience.gitee.content.heading">内容策划与传播</h4>
-                            <ul class="mb-3">
-                                <li>
-                                    <span data-i18n="experience.gitee.content.item1.main">独立负责 Gitee 自媒体矩阵（微信公众号/知乎/B站/视频号等）内容策划与撰写</span>
-                                    <ul class="mb-2">
-                                        <li data-i18n="experience.gitee.content.item1.result1">五年公众号粉丝增长 733%，知乎粉丝增长 161%，累计曝光近 2200 万次</li>
-                                        <li data-i18n="experience.gitee.content.item1.result2">产出图文/视频内容超 1000 篇，覆盖产品功能、开发者案例、技术方法论等</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <h4 data-i18n="experience.gitee.ecosystem.heading">开发者生态建设与项目布道</h4>
-                            <ul class="mb-3">
-                                <li>
-                                    <span data-i18n="experience.gitee.ecosystem.item1.main">策划并推动开源知识项目《开源指北》，从选题、写作到页面开发全流程负责</span>
-                                    <ul class="mb-2">
-                                        <li data-i18n="experience.gitee.ecosystem.item1.result1">在 Gitee 获得 3200+ Star，110+ 贡献者，累计访问超 11 万次</li>
-                                    </ul>
-                                </li>
-                                <li data-i18n="experience.gitee.ecosystem.item2">负责《2021-2023 中国开源开发者报告》撰写与推广，形成行业影响力</li>
-                                <li data-i18n="experience.gitee.ecosystem.item3">协助策划多场开发者活动，包括直播、沙龙、线上发布、专题报道等内容</li>
-                            </ul>
-                            <h4 data-i18n="experience.gitee.devops.heading">DevOps 产品传播与智能化研发内容建设</h4>
-                            <ul class="mb-3">
-                                <li data-i18n="experience.gitee.devops.item1">参与 Gitee DevSecOps 产品线内容体系搭建，围绕智能研发、效能协同、版本治理、安全合规等议题策划传播内容</li>
-                                <li data-i18n="experience.gitee.devops.item2">负责核心模块功能解读、落地文案及视频脚本撰写，推动产品在企业级用户中的理解与采用</li>
-                                <li data-i18n="experience.gitee.devops.item3">内容用于客户提案、行业活动、媒体发布与客户培训，支撑智能化研发体系表达统一</li>
-                            </ul>
-                            <h4 data-i18n="experience.gitee.ai.heading">模力方舟平台与 AI 应用生态传播</h4>
-                            <ul class="mb-3">
-                                <li data-i18n="experience.gitee.ai.item1">围绕模力方舟平台产出内容，覆盖国产大模型上线、微调、Serverless API、第三方平台联动、AI 应用、算力市场等模块</li>
-                                <li data-i18n="experience.gitee.ai.item2">与产品研发团队协同，撰写模型介绍、使用教程及视频脚本，驱动平台访问与开发者使用转化</li>
-                            </ul>
-                            <h4 data-i18n="experience.gitee.pr.heading">PR 与市场协作</h4>
-                            <ul>
-                                <li data-i18n="experience.gitee.pr.item1">撰写面向政企、媒体、开发者的外宣稿件，获得工信部与头部媒体引用</li>
-                                <li data-i18n="experience.gitee.pr.item2">支持销售/商务/市场团队内容物料，涵盖发布文案、活动页、品牌故事等</li>
-                                <li data-i18n="experience.gitee.pr.item3">为产品上线与功能推广提供命名建议、文案包装与传播路径设计</li>
-                            </ul>
+                </section>
+                <!-- Experience Section-->
+                <section class="section" id="experience">
+                    <h2 class="section-title" data-i18n="nav.experience">工作经历</h2>
+                    <div class="timeline">
+                        <!-- Gitee-->
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="role" data-i18n="experience.gitee.title">Gitee｜内容负责人</h3>
+                                <span class="date" data-i18n="experience.gitee.dates">2020.02 - 至今</span>
+                            </div>
+                            <p class="summary" data-i18n="experience.gitee.summary">围绕开源、DevOps、人工智能产品进行内容传播、开发者生态建设与产品推广工作</p>
+                            <div class="timeline-details">
+                                <h4 data-i18n="experience.gitee.content.heading">内容策划与传播</h4>
+                                <ul>
+                                    <li>
+                                        <span data-i18n="experience.gitee.content.item1.main">独立负责 Gitee 自媒体矩阵内容策划与撰写</span>
+                                        <ul>
+                                            <li data-i18n="experience.gitee.content.item1.result1">五年公众号粉丝增长 733%，知乎粉丝增长 161%，累计曝光近 2200 万次</li>
+                                            <li data-i18n="experience.gitee.content.item1.result2">产出图文/视频内容超 1000 篇</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4 data-i18n="experience.gitee.ecosystem.heading">开发者生态建设与项目布道</h4>
+                                <ul>
+                                    <li>
+                                        <span data-i18n="experience.gitee.ecosystem.item1.main">策划并推动开源知识项目《开源指北》</span>
+                                        <ul>
+                                            <li data-i18n="experience.gitee.ecosystem.item1.result1">3200+ Star，110+ 贡献者，累计访问超 11 万次</li>
+                                        </ul>
+                                    </li>
+                                    <li data-i18n="experience.gitee.ecosystem.item2">负责《2021-2023 中国开源开发者报告》撰写与推广</li>
+                                    <li data-i18n="experience.gitee.ecosystem.item3">协助策划多场开发者活动</li>
+                                </ul>
+                                <h4 data-i18n="experience.gitee.devops.heading">DevOps 产品传播</h4>
+                                <ul>
+                                    <li data-i18n="experience.gitee.devops.item1">参与 Gitee DevSecOps 产品线内容体系搭建</li>
+                                    <li data-i18n="experience.gitee.devops.item2">负责核心模块功能解读、落地文案及视频脚本撰写</li>
+                                    <li data-i18n="experience.gitee.devops.item3">内容用于客户提案、行业活动、媒体发布与客户培训</li>
+                                </ul>
+                                <h4 data-i18n="experience.gitee.ai.heading">模力方舟平台与 AI 应用生态传播</h4>
+                                <ul>
+                                    <li data-i18n="experience.gitee.ai.item1">围绕模力方舟平台产出内容</li>
+                                    <li data-i18n="experience.gitee.ai.item2">与产品研发团队协同，撰写模型介绍、使用教程及视频脚本</li>
+                                </ul>
+                                <h4 data-i18n="experience.gitee.pr.heading">PR 与市场协作</h4>
+                                <ul>
+                                    <li data-i18n="experience.gitee.pr.item1">撰写面向政企、媒体、开发者的外宣稿件</li>
+                                    <li data-i18n="experience.gitee.pr.item2">支持销售/商务/市场团队内容物料</li>
+                                    <li data-i18n="experience.gitee.pr.item3">为产品上线与功能推广提供命名建议</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.gitee.dates">2020.02 - 至今</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0" data-i18n="experience.pgyer.title">蒲公英开发者平台｜市场&运营经理</h3>
-                            <div class="subheading mb-3" data-i18n="experience.pgyer.summary">面向开发者工具的内容增长与用户运营，覆盖中英文双渠道</div>
-                            <ul>
-                                <li data-i18n="experience.pgyer.item1">主导三款工具型产品（内测分发、Tracup、FrontJS）的内容与增长运营</li>
+                        <!-- Pgyer-->
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="role" data-i18n="experience.pgyer.title">蒲公英开发者平台｜市场&运营经理</h3>
+                                <span class="date" data-i18n="experience.pgyer.dates">2016.04 - 2019.07</span>
+                            </div>
+                            <p class="summary" data-i18n="experience.pgyer.summary">面向开发者工具的内容增长与用户运营</p>
+                            <ul class="timeline-list">
+                                <li data-i18n="experience.pgyer.item1">主导三款工具型产品的内容与增长运营</li>
                                 <li data-i18n="experience.pgyer.item2">策划专题专栏「猿传奇」，采访并撰写开发者故事 25 篇</li>
-                                <li data-i18n="experience.pgyer.item3">制作产品演示视频，完成脚本、拍摄与剪辑工作</li>
+                                <li data-i18n="experience.pgyer.item3">制作产品演示视频</li>
                                 <li data-i18n="experience.pgyer.item4">负责百度/谷歌 SEO 与 SEM 广告，提升访问量 40%+</li>
-                                <li data-i18n="experience.pgyer.item5">海外用户增长运营：负责 Facebook/Quora 内容与广告投放</li>
+                                <li data-i18n="experience.pgyer.item5">海外用户增长运营</li>
                                 <li data-i18n="experience.pgyer.item6" data-i18n-type="html">
                                     产品用户增长成果：
                                     <br />
@@ -139,118 +126,125 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.pgyer.dates">2016.04 - 2019.07</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0" data-i18n="experience.lieyun.title">猎云网｜科技媒体记者</h3>
-                            <ul>
-                                <li data-i18n="experience.lieyun.item1">共发布 62 篇创业项目报道，含 3 篇核心人物深度访谈（A 轮公司创始人）</li>
+                        <!-- Lieyun-->
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="role" data-i18n="experience.lieyun.title">猎云网｜科技媒体记者</h3>
+                                <span class="date" data-i18n="experience.lieyun.dates">2015.09 - 2016.04</span>
+                            </div>
+                            <ul class="timeline-list">
+                                <li data-i18n="experience.lieyun.item1">共发布 62 篇创业项目报道，含 3 篇核心人物深度访谈</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.lieyun.dates">2015.09 - 2016.04</span></div>
                     </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="skills.sectionTitle">技能标签</h2>
-                    <ul class="fa-ul mb-0">
+                </section>
+                <!-- Projects Section-->
+                <section class="section" id="projects">
+                    <h2 class="section-title" data-i18n="nav.projects">项目与作品</h2>
+                    <div class="project-group">
+                        <h3 class="group-title" data-i18n="projects.content.heading">内容作品</h3>
+                        <ul class="project-list">
+                            <li data-i18n="projects.content.item1" data-i18n-type="html">
+                                <strong><a href="https://gitee.com/gitee-community/opensource-guide" target="_blank" rel="noopener">开源指北</a></strong>
+                                ：开源百科项目，项目 Star 数超 3000
+                            </li>
+                            <li data-i18n="projects.content.item2">《中国开源开发者报告（2021-2024）》：主笔并参与结构策划</li>
+                            <li data-i18n="projects.content.item3" data-i18n-type="html">
+                                TVC/MG 动画：主导
+                                <a href="https://www.xinpianchang.com/a11316121" target="_blank" rel="noopener">Gitee 十周年 TVC</a>
+                                等制作
+                            </li>
+                            <li data-i18n="projects.content.item4" data-i18n-type="html">
+                                技术向文章：
+                                <ul>
+                                    <li><a href="https://mp.weixin.qq.com/s/tFkFUrCuG3z1je2l_-LKgQ" target="_blank" rel="noopener">Gitee AI 入驻 Dify</a></li>
+                                    <li><a href="https://mp.weixin.qq.com/s/UKy6D9SNdX3rtBtezcbD2A" target="_blank" rel="noopener">Autoflow + Gitee AI</a></li>
+                                    <li><a href="https://mp.weixin.qq.com/s/Gf-Kl3wJLJXafty-UXaaYw" target="_blank" rel="noopener">Gitee SBOM 扫描上线</a></li>
+                                    <li><a href="https://mp.weixin.qq.com/s/kLlcwMJ4xkx8H_WXLmIfMQ" target="_blank" rel="noopener">DeepSeek 与开源</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-group">
+                        <h3 class="group-title">Velvimage · AI 图像创作平台</h3>
+                        <p class="project-desc">独立负责产品规划、UI 设计、前后端开发与部署，项目已上线运营</p>
+                        <ul class="project-list">
+                            <li>技术栈：Next.js + Tailwind、Supabase（认证/RPC/数据库）与 Stripe（充值 & Webhook）</li>
+                            <li>核心功能：访客/注册限额、积分付费、模板 & 自由模式、参考图上传、双语界面</li>
+                            <li>结果：成功服务真实创作者，具备实付充值与日常运营支撑</li>
+                        </ul>
+                        <p class="project-links">
+                            项目主页：
+                            <a href="https://www.velvimage.com/" target="_blank" rel="noopener">www.velvimage.com</a>
+                        </p>
+                    </div>
+                    <div class="project-group">
+                        <h3 class="group-title" data-i18n="projects.serchain.heading">Serchain｜以太坊转账浏览器</h3>
+                        <p class="project-desc" data-i18n="projects.serchain.summary">一款开源链上转账浏览器，聚焦以太坊地址转账可视化与数据导出体验</p>
+                        <ul class="project-list">
+                            <li data-i18n="projects.serchain.item1">独立完成产品结构设计与前后端搭建，使用 Flask + Tailwind CSS 构建响应式界面</li>
+                            <li data-i18n="projects.serchain.item2">支持输入任意 ETH 地址，实时展示转账方向、金额、手续费等核心信息</li>
+                            <li data-i18n="projects.serchain.item3">提供 CSV 导出、方向筛选、一键复制、查询历史、深色主题与中英文切换等功能</li>
+                            <li data-i18n="projects.serchain.item4">同步构建 CLI 工具，适配网页端与开发者终端使用场景</li>
+                        </ul>
+                        <p class="project-links" data-i18n="projects.serchain.links" data-i18n-type="html">
+                            项目主页：
+                            <a href="https://serchain.xyz" target="_blank" rel="noopener">serchain.xyz</a>
+                            ｜ GitHub 地址：
+                            <a href="https://github.com/tenngoxars/serchain" target="_blank" rel="noopener">github.com/tenngoxars/serchain</a>
+                        </p>
+                    </div>
+                </section>
+                <!-- Skills Section-->
+                <section class="section" id="skills">
+                    <h2 class="section-title" data-i18n="nav.skills">技能标签</h2>
+                    <ul class="skill-list">
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <span data-i18n="skills.item1">内容产出：擅长撰写开发者友好的技术文档、产品教程与市场稿件，支持多语言、多形式内容表达，具备较强的结构感与表达力</span>
+                            <span class="skill-icon"><i class="fas fa-pen-nib"></i></span>
+                            <span class="skill-text" data-i18n="skills.item1">内容产出：擅长撰写开发者友好的技术文档、产品教程与市场稿件</span>
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <span data-i18n="skills.item2">社区运营：熟悉开源社区与技术社媒生态，能策划执行直播、内容征集、话题互动等活动，持续推动开发者参与</span>
+                            <span class="skill-icon"><i class="fas fa-users"></i></span>
+                            <span class="skill-text" data-i18n="skills.item2">社区运营：熟悉开源社区与技术社媒生态，能策划执行直播、内容征集等活动</span>
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <span data-i18n="skills.item3">产品布道：参与多个 DevOps 与 AI 工具模块的发布传播，协同产品、研发、市场推动功能上线、内容落地与用户转化</span>
+                            <span class="skill-icon"><i class="fas fa-bullhorn"></i></span>
+                            <span class="skill-text" data-i18n="skills.item3">产品布道：参与多个 DevOps 与 AI 工具模块的发布传播</span>
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <span data-i18n="skills.item4">技术理解力：理解前后端开发流程，能独立完成简单网页搭建与部署，熟练使用 AI 工具辅助原型验证与内容迭代</span>
+                            <span class="skill-icon"><i class="fas fa-code"></i></span>
+                            <span class="skill-text" data-i18n="skills.item4">技术理解力：理解前后端开发流程，能独立完成简单网页搭建与部署</span>
                         </li>
                     </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="projects.sectionTitle">项目与作品展示</h2>
-                    <h3 class="mb-3" data-i18n="projects.content.heading">内容作品</h3>
-                    <ul class="mb-4">
-                        <li data-i18n="projects.content.item1" data-i18n-type="html">
-                            <strong><a href="https://gitee.com/gitee-community/opensource-guide" target="_blank" rel="noopener">开源指北</a></strong>
-                            ：开源百科项目，项目 Star 数超 3000，100+ 贡献者，年浏览量超 10 万
-                        </li>
-                        <li data-i18n="projects.content.item2">《中国开源开发者报告（2021-2024）》：主笔并参与结构策划，形成行业影响力</li>
-                        <li data-i18n="projects.content.item3" data-i18n-type="html">
-                            TVC/MG 动画：主导
-                            <a href="https://www.xinpianchang.com/a11316121" target="_blank" rel="noopener">Gitee 十周年 TVC</a>
-                            拍摄、
-                            <a href="https://www.xinpianchang.com/a12118602" target="_blank" rel="noopener">Gitee 企业版 MG 动画</a>
-                            、
-                            <a href="https://www.xinpianchang.com/a13153675" target="_blank" rel="noopener">模力方舟（Gitee AI）MG 动画</a>
-                            的制作
-                        </li>
-                        <li data-i18n="projects.content.item4" data-i18n-type="html">
-                            技术向文章（近期原创内容）：
-                            <ul>
-                                <li><a href="https://mp.weixin.qq.com/s/tFkFUrCuG3z1je2l_-LKgQ" target="_blank" rel="noopener">Gitee AI 入驻 Dify，成倍加速 AI 应用开发落地</a></li>
-                                <li><a href="https://mp.weixin.qq.com/s/UKy6D9SNdX3rtBtezcbD2A" target="_blank" rel="noopener">一行代码不用写，用 Autoflow + Gitee AI 搭建本地知识库问答机器人</a></li>
-                                <li><a href="https://mp.weixin.qq.com/s/Gf-Kl3wJLJXafty-UXaaYw" target="_blank" rel="noopener">Gitee SBOM 扫描上线，全面守护开源软件供应链安全</a></li>
-                                <li><a href="https://mp.weixin.qq.com/s/kLlcwMJ4xkx8H_WXLmIfMQ" target="_blank" rel="noopener">DeepSeek 与开源：肥沃土壤孕育 AI 硕果</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h3 class="mb-3" data-i18n="projects.serchain.heading">Serchain｜以太坊转账浏览器（Vibe Coding 练习项目）</h3>
-                    <p data-i18n="projects.serchain.summary">一款开源链上转账浏览器，聚焦以太坊地址转账可视化与数据导出体验</p>
-                    <ul class="mb-4">
-                        <li data-i18n="projects.serchain.item1">独立完成产品结构设计与前后端搭建，使用 Flask + Tailwind CSS 构建响应式界面</li>
-                        <li data-i18n="projects.serchain.item2">支持输入任意 ETH 地址，实时展示转账方向、金额、手续费等核心信息</li>
-                        <li data-i18n="projects.serchain.item3">提供 CSV 导出、方向筛选、一键复制、查询历史、深色主题与中英文切换等功能</li>
-                        <li data-i18n="projects.serchain.item4">同步构建 CLI 工具，适配网页端与开发者终端使用场景</li>
-                        <li data-i18n="projects.serchain.item5">已部署至 Vercel，项目处于初期版本迭代阶段，计划逐步支持多链查询</li>
-                    </ul>
-                    <p data-i18n="projects.serchain.links" data-i18n-type="html">
-                        项目主页：
-                        <a href="https://serchain.xyz" target="_blank" rel="noopener">serchain.xyz</a>
-                        ｜ GitHub 地址：
-                        <a href="https://github.com/tenngoxars/serchain" target="_blank" rel="noopener">github.com/tenngoxars/serchain</a>
-                    </p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Self Evaluation-->
-            <section class="resume-section" id="self">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="self.sectionTitle">自我评价</h2>
-                    <p data-i18n="self.description">长期站在开发者与产品之间，擅长用内容的形式讲清楚技术的价值。熟悉开源社区逻辑与开发者心智，具备将产品能力翻译为实际场景的经验。擅长多语言、多媒介传播，习惯以结果导向优化传播路径与社区构建方式。</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Honors-->
-            <section class="resume-section" id="honors">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="honors.sectionTitle">荣誉与奖项</h2>
-                    <h3 class="mb-3" data-i18n="honors.gitee.title">Gitee 公有云季度最佳员工（2025 Q1）</h3>
-                    <ul>
-                        <li data-i18n="honors.gitee.tagline">获奖标签：文采斐然、宣传先锋</li>
-                        <li data-i18n="honors.gitee.item1">春节期间配合研发团队完成国产大模型 DeepSeek 适配 PR 内容，代表文章被人民日报转载，阅读量突破 50 万</li>
-                        <li data-i18n="honors.gitee.item2">推动模力方舟与 Gitee 品牌形象建设，助力公司 AI+DevSecOps 战略转型</li>
-                        <li data-i18n="honors.gitee.item3">横向协作中累计贡献超 30 条销售线索，体现以数据为导向的内容传播成效</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+                </section>
+                <!-- Education Section-->
+                <section class="section" id="education">
+                    <h2 class="section-title" data-i18n="nav.education">教育背景</h2>
+                    <div class="education-item">
+                        <h3 data-i18n="education.university.name">陕西理工大学</h3>
+                        <p data-i18n="education.university.degree">经济学学士</p>
+                        <span class="date" data-i18n="education.university.dates">2011.09 - 2015.07</span>
+                    </div>
+                </section>
+                <!-- Honors Section-->
+                <section class="section" id="honors">
+                    <h2 class="section-title" data-i18n="nav.honors">荣誉与奖项</h2>
+                    <div class="honor-item">
+                        <h3 data-i18n="honors.gitee.title">Gitee 公有云季度最佳员工（2025 Q1）</h3>
+                        <p class="honor-tag" data-i18n="honors.gitee.tagline">获奖标签：文采斐然、宣传先锋</p>
+                        <ul class="honor-list">
+                            <li data-i18n="honors.gitee.item1">春节期间配合研发团队完成国产大模型 DeepSeek 适配 PR 内容</li>
+                            <li data-i18n="honors.gitee.item2">推动模力方舟与 Gitee 品牌形象建设</li>
+                            <li data-i18n="honors.gitee.item3">横向协作中累计贡献超 30 条销售线索</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <!-- Scripts-->
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

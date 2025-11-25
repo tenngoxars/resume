@@ -1,23 +1,6 @@
-// 
-// Variables
-// 
+// Typography
+$font-family-base: "Lato", sans-serif;
+$headings-font-family: "Cormorant Garamond", serif;
 
-// Override Bootstrap typography variables
-
-$font-family-base: "Muli", "Noto Sans SC", "Microsoft YaHei", "PingFang SC",
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
-
-$headings-font-family: "Saira Extra Condensed", "Noto Sans SC",
-    "Microsoft YaHei", "PingFang SC", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-$headings-font-weight: 700;
-
-$headings-color: $gray-800;
-
-$h1-font-size: 6rem;
-$h2-font-size: 3.5rem;
-$h3-font-size: 2rem;
+$font-size-base: 1rem;
+$line-height-base: 1.7;

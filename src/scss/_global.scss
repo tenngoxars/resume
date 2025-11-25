@@ -4,7 +4,35 @@
 
 body {
     padding-top: $navbar-base-height;
-    color: $gray-600;
+    color: $charcoal;
+    background-color: $off-white;
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+        content: "";
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle at 50% 50%, $pale-blue 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, $soft-peach 0%, transparent 40%);
+        opacity: 0.6;
+        z-index: -1;
+        pointer-events: none;
+        animation: floatBackground 20s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes floatBackground {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-5%, -5%);
+    }
 }
 
 @include media-breakpoint-up(lg) {
@@ -20,21 +48,32 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    // text-transform: uppercase; // Removed for elegance
+    font-family: $headings-font-family;
+    font-weight: 600;
+    color: $charcoal;
 }
 
 h1 {
     line-height: 1;
+    font-size: 5rem; // Slightly smaller than 6rem for better balance
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 p.lead {
-    font-size: 1.15rem;
-    font-weight: 400;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.6;
 }
 
 .subheading {
-    font-family: $headings-font-family;
+    font-family: $font-family-base; // Use sans-serif for subheading
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: $secondary;
 }
